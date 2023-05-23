@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+}
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: black;
+}
+.logo {
+    margin-left: 10px;
+    align-items: center;
+}
+.logo img {
+    height: 55px;
+}
+.searchBar {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    border-radius: 20px;
+    box-shadow: none;
+    margin-right: 100px;
+}
+
+#searchBar button, input {
+    height: 26px;
+    border: none;
+}
+#searchButton {
+    border: none;
+    background-color: white;
+}
+#searchButton img{
+    height: 16px;
+    margin-left: 10px;
+    color: red;
+}
+#sidebar {
+    border-right: 1px solid white;
+    height: 100%;
+    padding: 15px;
+}
+#sidebar-wrapper {
+    position: fixed;
+    background-color: black;
+    left: 0;
+    overflow-y: auto;
+}
+.selected {
+    background-color: red!important;
+    border-radius: 20px!important;
+}
+.sidebarElement, .sidebarElement:last-child {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 20px!important;
+}
+.sidebarElement:hover {
+    cursor: pointer;
+    background-color: red;
+}
+.sidebarIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0px, 0px, 10px, 0px;
+    padding: 5px;
+    color: white!important;
+    object-fit: cover;
+}
+#wrapper {
+    height: 100%;
+}
+#sidebar-wrapper {
+    height: 100%;
+    width: 200px;
+    background-color: black;
+}
+#page-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: calc(100% - 250px);
+}
+.video {
+    width: 22%;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .video:hover {
+    cursor: pointer;
+  }
+  .video img {
+    width: 100%;
+    transition: transform .2s;
+    height: 140px;
+}
+.video img:hover {
+    transform: scale(1.3);
+}
+.video p {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+#contentHeader {
+    color: white;
+}
+#videoModal .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #videoModal .modal-body p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .modalVideo {
+    width: 100%;
+    transition: transform 0.5s;
+    height: 140px;
+}
+.modalVideo:hover {
+    transform: scale(1.1);
+}
+
